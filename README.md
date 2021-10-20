@@ -3,7 +3,7 @@ Synopsis
 On
 University Admission System
 
- Team Members:-
+ ## Team Members:-
 
 ⦁	Mansi kumari (Btech- CSE , Sec- I )
 ⦁	(University Roll No- 191500442)
@@ -15,27 +15,27 @@ University Admission System
 ⦁	(University Roll No-191500366)
 
 
-Submitted to-
+## Submitted to-
 Mr. Vinay Agarwal
                     
-                       Introduction
+## Introduction
 
 Web development project (frontend and backend) which aims at giving students information about a college's admission system, eligibility criteria, fee structure, accommodations, etc.
 
-Use of the Project
+## Use of the Project
 
 The objective of this project is to meet the educational needs of students. This site offers first class educational content.  It helps students information about a college's admission system, eligibility criteria, fee structure, accommodations etc.
 
 
 
-              	  Feasibility of Project 
+## Feasibility of Project 
 
 This site is very convenient for students because we do not require any  high speed internet connection while accessing it. This site can be accessed anywhere and anytime. 
 
 
 
                        
-                     Functional Specification
+## Functional Specification
 
 
 
@@ -55,7 +55,7 @@ This site is very convenient for students because we do not require any  high s
 ⦁	Provide fee structure 
 
          
-                   Software Specification
+## Software Specification
 
 
 ⦁	Technology implemented :- Front-end Technology
@@ -76,7 +76,7 @@ This site is very convenient for students because we do not require any  high s
 
 
 
-          Hardware Requirement
+## Hardware Requirement
 
 
 ⦁	Processor :- i3 and above
@@ -95,7 +95,7 @@ This site is very convenient for students because we do not require any  high s
 
 
 
-           Future Scope
+## Future Scope
 
 
 
