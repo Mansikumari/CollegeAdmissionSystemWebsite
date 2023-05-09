@@ -65,7 +65,7 @@ This site is very convenient for students because we do not require any  high s
                            PHP.
 
 
-⦁	Database :- XAMPP 
+⦁	Database :- MYsql
 
 
 ⦁	User Interface design :- e-portal interface
