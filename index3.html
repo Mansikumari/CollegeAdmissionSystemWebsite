@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fee Structure</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar styling */
+        
+
+       
+        .navbar {
+            width: 100%;
+            background-color: yellowgreen;
+            overflow: hidden;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            border-bottom: 1px solid red;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            color: black;
+            font-size: 18px;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            background-color: lightblue;
+            font-weight: bold;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            color: black;
+            margin: 120px 0 60px; /* Increased top margin to push it down from the navbar */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        table {
+            width: 80%; /* Reduced the width to 80%, you can adjust this further */
+            margin: 20px auto; /* Center the table and added margin for better spacing */
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        table#t01 tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        table#t01 tr:nth-child(odd) {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        table#t01 th {
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        /* Footer styling */
+        footer {
+            position: absolute;
+            background-color: white;
+            bottom: 0px;
+            height: 100px;
+            margin-top: 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar ul li {
+                margin: 10px 0;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            table {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <ul>
+            <li><a class="cd" href="INDEX.html">Home</a></li>
+            <li><a class="cd" href="INDEX1.html">About Us</a></li>
+            <li><a class="cd" href="INDEX2.html">Academic</a></li>
+            <li><a class="cd" href="INDEX9.html">Admin Reg</a></li>
+            <li><a class="cd" href="INDEX8.html">Admin Login</a></li>
+            <li><a class="cd" href="INDEX4.html">Admission</a></li>
+            <li><a class="cd" href="INDEX3.html">Fee</a></li>
+            <li><a class="cd" href="INDEX5.html">Career</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <h1>Fee Structure for Undergraduate Course</h1>
+
+    <div>
+        <table id="t01">
+            <tr>
+                <th>S.No</th>
+                <th>Particulars (in INR)</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Admission Fee</td>
+                <td>2,000</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Hostel Fee</td>
+                <td>30,000</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Mess Fee</td>
+                <td>20,000</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Tuition Fee</td>
+                <td>80,000</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>Security Deposit</td>
+                <td>10,000</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><strong>Total</strong></td>
+                <td><strong>1,42,000</strong></td>
+            </tr>
+        </table>
+
+        <p># Fee needs to be paid in person after a candidate has been declared eligible.</p>
+        <p># There are scholarships available for economically weaker meritorious students.</p>
+    </div>
+
+</body>
+</html>

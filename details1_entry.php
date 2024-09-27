@@ -47,4 +47,3 @@ else
  <div class="login-page__link"><a href=INDEX8.html>Click Here to login</a><div>
 
 
-

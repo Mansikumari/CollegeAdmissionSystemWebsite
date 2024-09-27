@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission System</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: yellowgreen;
+            overflow: hidden;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            border-bottom: 1px solid red;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            color: black;
+            font-size: 18px;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            background-color: lightblue;
+            font-weight: bold;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .content {
+            padding: 20px;
+            margin-top: 80px; /* Adjusted for fixed navbar */
+        }
+
+        .content h1 {
+            font-size: 48px;
+            text-align: center;
+            color: #0066cc;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+
+        /* Section titles */
+        .content h2 {
+            font-size: 36px;
+            color: #ff6600;
+            border-left: 5px solid #0066cc;
+            padding-left: 15px;
+            margin-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        /* Paragraph styling */
+        .content p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        /* Hover effect on paragraph boxes */
+        .content p:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Accent line under sections */
+        .content hr {
+            border: none;
+            height: 2px;
+            background-color: #0066cc;
+            margin: 40px 0;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .content h1 {
+                font-size: 36px;
+            }
+
+            .content h2 {
+                font-size: 28px;
+            }
+
+            .content p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <ul>
+            <li><a class="cd" href="INDEX.html">Home</a></li>
+            <li><a class="cd" href="INDEX1.html">About Us</a></li>
+            <li><a class="cd" href="INDEX2.html">Academic</a></li>
+            <li><a class="cd" href="INDEX9.html">Admin Reg</a></li>
+            <li><a class="cd" href="INDEX8.html">Admin Login</a></li>
+            <li><a class="cd" href="INDEX4.html">Admission</a></li>
+            <li><a class="cd" href="INDEX3.html">Fee</a></li>
+            <li><a class="cd" href="INDEX5.html" >Career</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Content -->
+    <div class="content">
+        <h1>Courses Offered</h1>
+        
+        <div>
+            <h2>Computer Science and Engineering</h2>
+            <p>It is an 8-semester Bachelor's degree program in Computer Science & Engineering after 10+2 or equivalent. B.Tech in Computer Science & Engineering focuses on the theoretical foundation of computing along with the development of state-of-the-art computing solutions. CSE students learn how to design, develop, and test algorithms and software to develop effective solutions to computing problems in various social, economic, and organizational domains.</p>
+
+            <h2>Electronics & Communications</h2>
+            <p>Electronics and Communications Engineering is one of the most rapidly growing fields of engineering. The demand for EC engineers has more than tripled in recent years. With the increasing integration of hardware, firmware, and software, there is a rising need for better VLSI engineers. Additionally, advancements in communication techniques have resulted in substantial demand in the telecom industry.</p>
+
+            <h2>Civil Engineering</h2>
+            <p>Civil engineering involves the study, design, development, and maintenance of the built environment, encompassing both natural and man-made structures. Civil engineers focus on everything from bridges and roads to water systems and public infrastructure, ensuring their sustainability and functionality for the future.</p>
+
+            <h2>Mechanical Engineering</h2>
+            <p>Mechanical Engineering is an 8-semester Bachelor's degree program focusing on one of the oldest and broadest engineering disciplines. Mechanical engineers apply principles of physics and materials science to design, manufacture, and maintain mechanical systems. They are involved in producing and utilizing heat and mechanical power for the design, production, and operation of machines and tools.</p>
+
+            <h2>Electrical Engineering</h2>
+            <p>This program covers the core concepts of electrical engineering, including Electrical Machines, Power Systems, Control Systems, Power Electronics, and High Voltage Engineering. Graduates are equipped with skills to work in various sectors, including power generation, automation, and electrical infrastructure.</p>
+
+            <h2>B. Tech (Biotechnology)</h2>
+            <p>The B. Tech program in Biotechnology is a unique 4-year degree designed to equip students with skills to become bioinformaticians, molecular biotechnologists, or bioprocess engineers. Graduates can pursue careers in health care, diagnostics, pharmaceutical and therapeutic industries, forensic science, industrial and environmental sciences, and bioinformatics.</p>
+        </div>
+
+        <hr> <!-- Decorative line to separate sections -->
+    </div>
+
+</body>
+</html>

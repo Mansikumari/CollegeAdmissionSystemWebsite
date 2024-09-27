@@ -1,143 +1,206 @@
-<html><head>
-     
-<style>
-ul {
-    float: left;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <style>
+        /* General reset for margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-a.cd {
-    float: left;
-    width: 7.9em;
-    text-decoration: none;
-    color: white;
-    background-color:black;
-    padding: 0.2em 0.6em;
-    border-right: 1px solid white;
-     text-align: center;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.magd.cam.ac.uk/sites/default/files/styles/1302x600/public/2017-09/magdalene_college_library.jpg?itok=1v6BgUME);
+            background-size: cover;
+            background-position: center;
+        }
 
-a.cd :hover {background-color: #ff3300;}
+        /* Navbar styling */
+        .navbar {
+            width: 100%;
+            background-color: yellowgreen;
+            overflow: hidden;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #333;
+        }
 
-li {display: inline;}
-    
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
 
-    form {
-        text-align:center;
-    border: 5px solid black;
-    
-}
+        .navbar ul li {
+            margin: 0 10px;
+        }
 
-input[type=text], input[type=password] {
-    width: 30%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 2px solid black;
-    box-sizing: border-box;
-;
+        .navbar ul li a {
+            color: black;
+            font-size: 16px;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, font-weight 0.3s ease;
+        }
 
-}
+        .navbar ul li a:hover {
+            background-color: lightblue;
+            font-weight: bold;
+        }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-   
-    width: 20%;
-}
-label{
-    min-width: 100px;
-    display: inline-block;
-}
+        /* Main content styling */
+        #am {
+            width: 100%;
+            max-width: 450px;
+            margin: 80px auto 50px;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
 
+        h2 {
+            text-align: center;
+            color: black;
+            margin-bottom: 20px;
+        }
 
+        .imgcontainer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-.imgcontainer {
-  
-    margin: 24px 45% 12px 36%;
-    width: 30%;
-}
-#11
-    {
-        text-align: center;
-    }
-img.avatar {image-align: center;
-    width: 40%;
-    border-radius: 50%;
-}
+        img.avatar {
+            width: 100px;
+            border-radius: 50%;
+        }
 
+        form {
+            text-align: center;
+        }
 
+        input[type=text], input[type=password] {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
 
+        button {
+            width: 50%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
 
+        button:hover {
+            background-color: #45a049;
+        }
 
+        .container label {
+            font-size: 16px;
+            display: inline-block;
+            margin-bottom: 10px;
+            color: black;
+        }
 
-    body{
-        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(https://www.magd.cam.ac.uk/sites/default/files/styles/1302x600/public/2017-09/magdalene_college_library.jpg?itok=1v6BgUME);
-    }
-    #am{
-        width :40%;
-        align-items: center;
-         
- background-color: linen;
-    left: 0;
-    right: 0;
-    
+        .container input[type=checkbox] {
+            margin-top: 10px;
+        }
 
+        /* Media Queries for responsiveness */
+        @media screen and (max-width: 768px) {
+            .navbar ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
 
-    margin: auto;
-    }
-/* Change styles for span and cancel button on extra small screens */
+            .navbar ul li {
+                margin: 5px;
+            }
 
+            .navbar ul li a {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
 
+            #am {
+                width: 90%;
+            }
 
+            button {
+                width: 80%;
+            }
+        }
 
+        @media screen and (max-width: 480px) {
+            input[type=text], input[type=password], button {
+                width: 100%;
+            }
 
-   
-    
-</style>
-    </head>
+            h2 {
+                font-size: 22px;
+            }
 
-    
-<ul>
-     <li><a class="cd" href="INDEX.html">Home</a></li>
-  <li><a class="cd" href="INDEX1.html">About us</a></li>
-  <li><a class="cd" href="INDEX2.html">Academics</a></li>
-  <li><a class="cd" href="INDEX3.html">Fee</a></li>
-  <li><a class="cd" href="INDEX4.html">Admissions</a></li>
-  <li><a class="cd" href="INDEX5.html" >Career</a></li>
-    <li><a class="cd" href="INDEX6.html" >Register</a></li>
-    <li><a class="cd" href="INDEX7.html" >Login</a></li>
-    <li><a class="cd" href="INDEX8.html" >Admin Login</a></li>
-    <li><a class="cd" href="INDEX9.html" >Admin register</a></li>
-</ul>
-    <div id='am'>
+            img.avatar {
+                width: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
 
-
-<form action="php2.php" method="POST">
-  <div class="imgcontainer">
-      <h2>Student Login </h2>
-    <img src="https://image.flaticon.com/icons/png/512/194/194931.png" alt="Avatar" class="avatar" >
-  </div>
-
-  <div class="container">
-    <label><b>Application id</b></label>
-    <input type="text" placeholder="Enter application id" id="aid" name="aid" required><br>
-    <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" id="psw" name="psw" required><br>
-         <input type="checkbox" checked="checked"> Remember me<br>
-    <button type="submit" value="submit">Login</button>
-   
-  </div>
-
-  
-</form>
+    <!-- Navbar -->
+    <div class="navbar">
+        <ul>
+            <li><a href="INDEX.html">Home</a></li>
+            <li><a href="INDEX1.html">About Us</a></li>
+            <li><a href="INDEX2.html">Academic</a></li>
+            <li><a href="INDEX9.html">Admin Reg</a></li>
+            <li><a href="INDEX8.html">Admin Login</a></li>
+            <li><a href="INDEX4.html">Admission</a></li>
+            <li><a href="INDEX3.html">Fee</a></li>
+            <li><a href="INDEX5.html">Career</a></li>
+        </ul>
     </div>
-   
+
+    <!-- Login Form -->
+    <div id="am">
+        <form action="php2.php" method="POST">
+            <div class="imgcontainer">
+                <h2>Student Login</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl9E47ZoW0v8FQjlBrRHbF24aAOacjf-A_ow&s" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="aid"><b>Application ID</b></label><br>
+                <input type="text" placeholder="Enter Application ID" id="aid" name="aid" required><br>
+
+                <label for="psw"><b>Password</b></label><br>
+                <input type="password" placeholder="Enter Password" id="psw" name="psw" required><br>
+
+                <input type="checkbox" checked="checked"> Remember me<br>
+
+                <button type="submit" value="submit">Login</button>
+            </div>
+        </form>
+    </div>
+
 </body>
 </html>
