@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <style>
+        /* General reset for margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.magd.cam.ac.uk/sites/default/files/styles/1302x600/public/2017-09/magdalene_college_library.jpg?itok=1v6BgUME);
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            width: 100%;
+            background-color: yellowgreen;
+            overflow: hidden;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #333;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar ul li {
+            margin: 0 10px;
+        }
+
+        .navbar ul li a {
+            color: black;
+            font-size: 16px;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, font-weight 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            background-color: lightblue;
+            font-weight: bold;
+        }
+
+        /* Main content styling */
+        #am {
+            width: 100%;
+            max-width: 450px;
+            margin: 80px auto 50px;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .imgcontainer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img.avatar {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        input[type=text], input[type=password] {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 50%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .container label {
+            font-size: 16px;
+            display: inline-block;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        .container input[type=checkbox] {
+            margin-top: 10px;
+        }
+
+        /* Media Queries for responsiveness */
+        @media screen and (max-width: 768px) {
+            .navbar ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .navbar ul li {
+                margin: 5px;
+            }
+
+            .navbar ul li a {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+
+            #am {
+                width: 90%;
+            }
+
+            button {
+                width: 80%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            input[type=text], input[type=password], button {
+                width: 100%;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            img.avatar {
+                width: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <ul>
+            <li><a class="cd" href="index.html">Home</a></li>
+            <li><a class="cd" href="index1.html">About Us</a></li>
+            <li><a class="cd" href="index2.html">Academic</a></li>
+            <li><a class="cd" href="index9.html">Admin Reg</a></li>
+            <li><a class="cd" href="index8.html">Admin Login</a></li>
+
+            <li><a class="cd" href="index4.html">Admission</a></li>
+            <li><a class="cd" href="index3.html">Fee</a></li>
+
+            <li><a class="cd" href="index5.html" >Career</a></li>
+        </ul>
+    </div>
+
+    <!-- Login Form -->
+    <div id="am">
+        <form action="php2.php" method="POST">
+            <div class="imgcontainer">
+                <h2>Student Login</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl9E47ZoW0v8FQjlBrRHbF24aAOacjf-A_ow&s" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="aid"><b>Application ID</b></label><br>
+                <input type="text" placeholder="Enter Application ID" id="aid" name="aid" required><br>
+
+                <label for="psw"><b>Password</b></label><br>
+                <input type="password" placeholder="Enter Password" id="psw" name="psw" required><br>
+
+                <input type="checkbox" checked="checked"> Remember me<br>
+
+                <button type="submit" value="submit">Login</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

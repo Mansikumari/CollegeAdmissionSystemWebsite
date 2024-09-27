@@ -88,16 +88,16 @@ button{
     <body>
 
     <ul>
-    <li><a class="cd" href="INDEX.html">Home</a></li>
-  <li><a class="cd" href="INDEX1.html">About us</a></li>
-  <li><a class="cd" href="INDEX2.html">Academics</a></li>
-  <li><a class="cd" href="INDEX3.html">Fee</a></li>
-  <li><a class="cd" href="INDEX4.html">Admissions</a></li>
-  <li><a class="cd" href="INDEX5.html" >Career</a></li>
-    <li><a class="cd" href="INDEX6.html" >Register</a></li>
-    <li><a class="cd" href="INDEX7.html" >Login</a></li>
-    <li><a class="cd" href="INDEX8.php" >Admin Login</a></li>
-    <li><a class="cd" href="INDEX9.html" >Admin register</a></li>
+    <li><a class="cd" href="index.html">Home</a></li>
+  <li><a class="cd" href="index1.html">About us</a></li>
+  <li><a class="cd" href="index2.html">Academics</a></li>
+  <li><a class="cd" href="index3.html">Fee</a></li>
+  <li><a class="cd" href="index4.html">Admissions</a></li>
+  <li><a class="cd" href="index5.html" >Career</a></li>
+    <li><a class="cd" href="index6.html" >Register</a></li>
+    <li><a class="cd" href="index7.html" >Login</a></li>
+    <li><a class="cd" href="index8.php" >Admin Login</a></li>
+    <li><a class="cd" href="index9.html" >Admin register</a></li>
 <li><a class="cd" href="logout.php">Log out</a></li>
 
 </ul>
@@ -149,7 +149,7 @@ $first_row=true;
 
     }
 ?>
-<h3>if status is accepted <a href="INDEX.html"> click here</a> to home page</h3>
+<h3>if status is accepted <a href="index.html"> click here</a> to home page</h3>
 </div>
 </body>
 <h/tml>

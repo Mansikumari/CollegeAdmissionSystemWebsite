@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Recruitment</title>
+    <style>
+        /* Resetting margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://emango.s3.amazonaws.com/media/cache/60/d3/60d346d30108965a588ed372f189fc20.jpg);
+            background-size: cover;
+            background-position: center;
+            padding-top: 80px; /* Added space to show content below navbar */
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: yellowgreen;
+            overflow: hidden;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            border-bottom: 1px solid red;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            color: black;
+            font-size: 18px;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            background-color: lightblue;
+            font-weight: bold;
+        }
+
+        /* Main heading */
+        h1 {
+            text-align: center;
+            font-size: 44px;
+            margin-bottom: 40px;
+            color: white; /* Ensures the heading stands out on dark background */
+        }
+
+        /* Content area */
+        .content {
+            background-color: lightcyan;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            width: 80%;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        /* Footer styles */
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+            }
+
+            .navbar ul li {
+                margin-bottom: 10px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .content {
+                width: 95%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            .navbar ul li a {
+                padding: 8px 15px;
+            }
+
+            .content {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <ul>
+            <li><a class="cd" href="index.html">Home</a></li>
+            <li><a class="cd" href="index1.html">About Us</a></li>
+            <li><a class="cd" href="index2.html">Academic</a></li>
+            <li><a class="cd" href="index9.html">Admin Reg</a></li>
+            <li><a class="cd" href="index8.html">Admin Login</a></li>
+
+            <li><a class="cd" href="index4.html">Admission</a></li>
+            <li><a class="cd" href="index3.html">Fee</a></li>
+
+            <li><a class="cd" href="index5.html" >Career</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Heading -->
+    <h1>Faculty Recruitment</h1>
+
+    <!-- Content Section -->
+    <div class="content">
+        <p>
+            Faculty positions at the level of Professor, Associate Professor, and Assistant Professor in various academic departments, centers, schools, and inter-disciplinary programs have been advertised by the Institute through advertisement No. B-9/2021-2022.
+            This is a rolling advertisement, and there is no last date for applications. The Faculty Search Committees meet regularly to consider the applications and arrange for invited seminars and/or interviews as the need arises.
+            Please write to the respective Heads of Academic Divisions for specific information.
+        </p>
+        
+        <br>
+        
+        <p>
+            For general inquiries, contact:
+            <br>
+            Dean (Faculty)
+            <br>
+            Address: GLA UNIVERSITY, Mathura-Delhi Road, P.O. Chaumuhan, Mathura-281 406, Uttar Pradesh, India
+            <br>
+            Phone: +91-5662-250900
+            <br>
+            E-mail: glauniversity@gla.ac.in
+        </p>
+        
+        <br>
+        
+        <!-- <p>
+            <a href="#">Application Forms for Faculty Positions</a><br>
+            <a href="#">Faculty Job Vacancy List</a><br>
+            <a href="#">Faculty Facilities</a>
+        </p> -->
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 GLA University. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
